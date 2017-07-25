@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "target": "es2015",
+    "sourceMap": true,
+    "outDir": "bin",
+    "rootDir": "src"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

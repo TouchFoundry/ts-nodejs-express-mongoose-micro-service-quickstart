@@ -1,0 +1,8 @@
+{
+  "apps": [
+    {
+      "name": "ts-nodejs-express-mongoose-service",
+      "script": "dist/app.js"
+    }
+  ]
+}
