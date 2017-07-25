@@ -7,7 +7,7 @@ services:
       - ~/docker_volumes/ts-nodejs-express-mongoose-service/mongo:/data/db
     restart: always
 
-  authentication:
+  serviceName:
     depends_on:
       - db
     image: quickstart/ts-nodejs-express-mongoose-service:latest
