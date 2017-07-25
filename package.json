@@ -4,7 +4,6 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
     "start": "gulp && cd dist/ && node --debug=8990 app.js"
