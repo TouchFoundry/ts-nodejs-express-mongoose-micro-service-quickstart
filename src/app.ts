@@ -30,8 +30,13 @@ export class QuickStartService {
     //endregion
 
     constructor() {
+        let connString: string = 'mongodb://' + Config.dbSettings.connectionString + '/' + Config.dbSettings.database;
+
+        if (!!process.env.USES_REPLICA)
+            connString += "/?replicaSet=" + Config.dbSettings.replicaSet;
+
         //connect to mongodb
-        mongoose.connect(Config.dbSettings.connectionString + '/' + Config.dbSettings.database).then(() => {
+        mongoose.connect(connString).then(() => {
             this.winston.info('Mongo Connected!');
         }).catch((error) => {
             throw error;

@@ -13,6 +13,7 @@ export const Config = {
     dbSettings: {
         //use env variable or use pre-defined
         connectionString: process.env.MONGO_DB_HOST || 'mongodb://localhost:27017',
-        database: 'exampleDB'
+        database: 'exampleDB',
+        replicaSet: 'rs0'
     }
 };

@@ -17,3 +17,4 @@ services:
     restart: always
     environment:
       MONGO_DB_HOST: db:27017
+#      USES_REPLICA: "true"
